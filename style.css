@@ -118,3 +118,5 @@ a:hover { text-decoration: underline; }
   .status { margin: 8px 0 0; }
   .pinned { grid-template-columns: 1fr; }
 }
+
+.username, .card-title a { overflow-wrap: anywhere; }

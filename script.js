@@ -16,7 +16,7 @@ const langTag = (lang) => lang
 document.title = `${S.name} · Home`;
 $("topName").textContent = hasUser ? user : S.name;
 $("name").textContent = S.name;
-$("username").textContent = hasUser ? user : "";
+$("username").textContent = [hasUser && user, S.pronouns].filter(Boolean).join(" · ");
 $("bio").textContent = S.bio;
 $("status").textContent = S.status || "";
 $("readme").innerHTML = S.readme;
